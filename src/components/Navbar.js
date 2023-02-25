@@ -1,7 +1,22 @@
 import React from "react"
 import { BsTwitter, BsFacebook,  } from 'react-icons/bs';
 import { AiFillInstagram, AiFillHome } from "react-icons/ai";
+import { BiCategory , BiCart} from "react-icons/bi"
+import { useSelector } from 'react-redux'
+import  { useNavigate } from "react-router-dom";
+
 export default function Navbar() {
+
+  let navigate = useNavigate();
+  
+  const cart = useSelector((state) => state.cart)
+  const getTotalQuantity = () => {
+    let total = 0
+    cart.forEach(item => {
+      total += item.quantity
+    })
+    return total
+  }
   
   return (
     <>
@@ -28,6 +43,17 @@ export default function Navbar() {
         
         <li className="nav-item">
           <a className="nav-link active" aria-current="page" href="/"><AiFillInstagram className="icons"/></a>
+        </li>
+
+        <li className="nav-item">
+          <a className="nav-link active" aria-current="page" href="/category"><BiCategory className="icons"/></a>
+        </li>
+
+        <li>
+        <div className='shopping-cart' onClick={() => navigate('/cart')}>
+            <BiCart id='cartIcon'/>
+            <p>{getTotalQuantity() || 0}</p>
+          </div>
         </li>
       </ul>
     </div>

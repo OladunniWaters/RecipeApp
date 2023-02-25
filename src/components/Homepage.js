@@ -3,14 +3,16 @@ import { useState, useEffect, useCallback } from "react";
 import Recipe from "./Recipe";
 import SearchBar from "./SearchBar";
 import Navbar from "./Navbar"
-
+import  { useNavigate } from "react-router-dom";
 
 
 
 const apiUrl = "https://www.themealdb.com/api/json/v1/1/search.php?s="
 
 export default function Homepage() {
-  
+
+
+
  //RECIPE FUNCTION
   const [query, setQuery] = useState("");
   const [recipes, setRecipes] = useState([]);
@@ -32,14 +34,9 @@ export default function Homepage() {
     fetchRecipe();
   }
   
-  //filter by category 
-        const filterResult = (catItem) =>{
-        const result = recipes.filter((curDate) =>{
-          return curDate.category === catItem;
-        });
-        setRecipes(result)
-      }
-  
+
+  let navigate = useNavigate();
+
   
   return (
       <> 
@@ -52,13 +49,9 @@ export default function Homepage() {
             onChange={e => setQuery(e.target.value)}
          />
          
-          <div>
-           <button onClick= {() => filterResult("beef")}>BEEF</button>
-           <button onClick= {() => filterResult("fragrances")}>fragrances</button>
-           <button onClick= {() => filterResult("skincare")}>skincare</button>
-           <button onClick={() => setRecipes(recipes)}>All</button>
+         <div>
+           <button onClick={() => {navigate(`/beefpage`)}}>BEEF</button>
           </div>
-    
   
               <h1>RECIPES</h1>
               <div className="recipe-container">

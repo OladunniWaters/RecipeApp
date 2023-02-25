@@ -26,12 +26,12 @@ export default function Details() {
               (!item) ? `404 NOT FOUND ${MealId}` : (
                         <div key={item.idMeal}> 
                                <img src={item.strMealThumb} alt="..." />
-                               <h1>Hey yo{MealId}</h1>
                               <div className="">
                                 <p className="">{item.strMeal}</p>
                                 <p className="">{item.strIngredient1}</p>
                                 <p className="">{item.strInstructions}</p>
-                             </div>   
+                             </div> 
+            
                         </div>
                 )
             }
