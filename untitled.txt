@@ -1,44 +1,47 @@
 import React from "react";
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
+//import RandomRecipe from "./RandomRecipe";
 import Recipe from "./Recipe";
 import SearchBar from "./SearchBar";
 import Navbar from "./Navbar"
-
+import Category from "./Category"
 
 
 
 const apiUrl = "https://www.themealdb.com/api/json/v1/1/search.php?s="
-
+const categoryApi = 'https://www.themealdb.com/api/json/v1/1/filter.php?c='
 export default function Homepage() {
   
  //RECIPE FUNCTION
+  const [url, setUrl] = useState('https://www.themealdb.com/api/json/v1/1/filter.php?c=')
+  const [item, setItem] = useState()
+  const [show, setShow] = useState(false)
+    useEffect(() => {
+    fetch(url).then(res=>res.json()).then(data => {
+      setItem(data.meals)
+    })
+  }, [url])
+  
+  
   const [query, setQuery] = useState("");
   const [recipes, setRecipes] = useState([]);
   
   
-  const fetchRecipe = useCallback (async () => {
+  const fetchRecipe = async () => {
     const url = apiUrl + query
     const response = await fetch(url)
     const data = await response.json();
     setRecipes(data.meals);
-  }, [query])
+  }
   
   useEffect(() => {
     fetchRecipe();
-  }, [fetchRecipe])
+  }, [])
   
   const handleSubmit = (e) => {
     e.preventDefault();
     fetchRecipe();
   }
-  
-  //filter by category 
-        const filterResult = (catItem) =>{
-        const result = recipes.filter((curDate) =>{
-          return curDate.category === catItem;
-        });
-        setRecipes(result)
-      }
   
   
   return (
@@ -51,15 +54,12 @@ export default function Homepage() {
             handleSubmit={handleSubmit}
             onChange={e => setQuery(e.target.value)}
          />
-         
-          <div>
-           <button onClick= {() => filterResult("beef")}>BEEF</button>
-           <button onClick= {() => filterResult("fragrances")}>fragrances</button>
-           <button onClick= {() => filterResult("skincare")}>skincare</button>
-           <button onClick={() => setRecipes(recipes)}>All</button>
-          </div>
     
-  
+    
+          <div style={{ margin: '2.5rem 0', }}>
+             <Category />
+          </div>
+
               <h1>RECIPES</h1>
               <div className="recipe-container">
                   <div className="recipes">

@@ -1,13 +1,15 @@
 import React from "react";
+import  { useNavigate } from "react-router-dom";
+
 
 export default function Recipe({recipe}) {
   const {idMeal, strMeal, strCategory, strMealThumb } = recipe
-  
+    let navigate = useNavigate();
   
   return (
       <> 
 
-           <div className="card">
+           <div className="card" key={idMeal} >
              <img 
                  src={strMealThumb} 
                  alt={strMeal}
@@ -17,7 +19,7 @@ export default function Recipe({recipe}) {
              <div className="card-body">
                 <p className="category">{strCategory}</p>
                 <h3 className="name">{strMeal}</h3>
-                <a className="recipe-btn" href={"https://www.themealdb.com/meal/" + idMeal} alt="" >RECIPE</a>
+               <button onClick={() => {navigate(`/${idMeal}`)}}>RECIPE</button>
              </div>   
            </div>
 

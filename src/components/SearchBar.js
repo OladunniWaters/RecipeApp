@@ -4,7 +4,6 @@ export default function SearchBar({ handleSubmit, value, onChange }) {
   
   return (
       <>
-      
         <form onSubmit={handleSubmit}>
             <input
                value={value}
