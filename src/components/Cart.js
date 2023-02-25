@@ -1,6 +1,5 @@
-
-import Total from './components/Total'
-import CartItem from './components/CartItem'
+import Total from './Total'
+import CartItem from '../components/CartItem'
 import { useSelector } from 'react-redux'
 
 function Cart() {
@@ -14,11 +13,11 @@ function Cart() {
           <h3>Shopping Cart</h3>
           {cart?.map((item) => (
             <CartItem
-              key={item.id}
-              id={item.id}
-              image={item.image}
-              title={item.title}
-              price={item.price} 
+              key={item.idMeal}
+              id={item.idMeal}
+              thumbnail={item.strMealThumb}
+              title={item.strMeal}
+              price={item.strCategory} 
               quantity={item.quantity}
             />
           ))}

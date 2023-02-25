@@ -12,7 +12,7 @@ export default function Recipe({recipe}) {
   return (
       <> 
 
-           <div className="card" key={idMeal} >
+           <div className="card" >
              <img 
                  src={strMealThumb} 
                  alt={strMeal}
