@@ -1,7 +1,6 @@
-import './total.css'
 import {useSelector} from 'react-redux'
 
-function Total() {
+function TotalItem() {
 
   const cart = useSelector((state) => state.cart)
 
@@ -28,4 +27,4 @@ function Total() {
   )
 }
 
-export default Total
+export default TotalItem
