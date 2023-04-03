@@ -1,7 +1,11 @@
 import React from "react";
+import './Recipe.scss'
 import  { useNavigate } from "react-router-dom";
 import { useDispatch } from 'react-redux';
-import {addToCart} from './redux/cartSlice';
+import {addToCart} from '../redux/cartSlice';
+import { BsFillHeartFill } from 'react-icons/bs';
+
+
 
 export default function Recipe({recipe}) {
   const {idMeal, strMeal, strCategory, strMealThumb } = recipe
@@ -28,7 +32,8 @@ export default function Recipe({recipe}) {
                     dispatch(addToCart({
                       idMeal, strMeal, strCategory, strMealThumb
                     }))
-                  }>Add to Favorite
+                  }>
+                  <BsFillHeartFill />
                 </button>
              </div>   
            </div>

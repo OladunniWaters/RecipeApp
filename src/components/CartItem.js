@@ -1,4 +1,4 @@
-import { incrementQuantity, decrementQuantity, removeItem} from './redux/cartSlice'
+import {  removeItem} from '../redux/cartSlice'
 import { useDispatch } from 'react-redux'
 
 function CartItem({id, thumbnail , title, price, quantity=0}) {

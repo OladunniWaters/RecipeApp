@@ -1,4 +1,4 @@
-import Total from './Total'
+
 import CartItem from '../components/CartItem'
 import { useSelector } from 'react-redux'
 
@@ -24,9 +24,6 @@ function Cart() {
         </div>
       </div>
 
-      <div className="cart__right">
-        <Total/>
-      </div>
 
     </div>
   )
