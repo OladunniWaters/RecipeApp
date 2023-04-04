@@ -6,69 +6,7 @@
   background-color: #fff;
 }
 
-.navbar-brand {
- color: #65C18C;
- font-weight: bold;
-}
 
-.icons {
-  color: #65C18C;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-
-
-.name {
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-.recipe-btn {
-  background-color: #65C18C;
-  color: #fff;
-  padding: 10px;
-  text-decoration: none;
-  border-radius: 10px;
-  font-weight: bold;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-
-form {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
-
-}
-
-input {
-  border: 2px solid #65C18C;
-  padding: 10px;
-  font-size: 16px;
-}
-
-input:focus {
-  outline: none;
-}
-
-.search-bar {
-  border-radius: 10px;
-  width: 400px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.btn {
- border-radius: 10px;
- background-color: #65C18C;
- color: #fff;
- margin-left: 10px;
-}
 
 
 

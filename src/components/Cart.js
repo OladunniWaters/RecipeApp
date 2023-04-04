@@ -9,17 +9,17 @@ function Cart() {
   return (
     <div className="favorite">
         <div>
-              <h3>FAVORITES</h3>
-              {cart?.map((item) => (
+              <h3 className='cart_title'>FAVORITES</h3>
+              { cart ?  cart.map((item) => (
                 <CartItem
                   key={item.idMeal}
                   id={item.idMeal}
                   thumbnail={item.strMealThumb}
                   title={item.strMeal}
-                  price={item.strCategory} 
+                  category={item.strCategory} 
                   quantity={item.quantity}
                 />
-              ))}
+              )) : `Add Recipes to favorite`  }
       </div>
 
 

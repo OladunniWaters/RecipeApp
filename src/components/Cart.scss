@@ -1,3 +1,8 @@
+$color-bg :   rgba(39,174,97,255); //#01a149
+$color-black : #000;
+$color-white : #fff;
+
+
 .favorite {
   //small
 @media screen and (min-width: 320px) and (max-width: 576px) {
@@ -25,12 +30,42 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-padding-top: 100px;
+padding-top: 50px;
 padding-bottom: 100px;
 text-align: center;
 }
 
 
+
+.cart_title {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+text-align: center;
+font-size: 60px;
+font-family: 'Dosis', sans-serif;
+font-weight: bold;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+text-align: center;
+font-size: 60px;
+font-family: 'Dosis', sans-serif;
+font-weight: bold;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 992px) {
+text-align: center;
+font-size: 60px;
+font-family: 'Dosis', sans-serif;
+font-weight: bold;
+}
+//extra large
+text-align: center;
+font-size: 60px;
+font-family: 'Dosis', sans-serif;
+font-weight: bold;
+margin-bottom: 25px;
+}
 
 
 

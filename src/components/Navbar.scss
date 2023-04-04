@@ -1,3 +1,64 @@
 .navbar {
   background: #000;
 }
+
+.icons {
+  color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.heart_icon {
+  color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+
+.favoriteIcon_cont {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+
+
+.navbar-brand {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+ color: #fff;
+ font-size: 20px;
+ font-weight: bold;
+ font-family: 'Dosis', sans-serif;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+ color: #fff;
+ font-size: 20px;
+ font-weight: bold;
+ font-family: 'Dosis', sans-serif;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 992px) {
+ color: #fff;
+ font-size: 20px;
+ font-weight: bold;
+ font-family: 'Dosis', sans-serif;
+}
+//extra large
+ color: #fff;
+ font-size: 25px;
+ font-weight: bold;
+ font-family: 'Dosis', sans-serif;
+}
+
+.navbar-brand:hover {
+ color: rgba(76,176,81,255);
+ font-size: 20px;
+ font-weight: bold;
+ font-family: 'Dosis', sans-serif;
+}
+
+
+

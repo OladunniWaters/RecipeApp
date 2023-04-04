@@ -1,21 +1,31 @@
-import {  removeItem} from '../redux/cartSlice'
-import { useDispatch } from 'react-redux'
-import './CartItem.scss'
+import {  removeItem} from '../redux/cartSlice';
+import { useDispatch } from 'react-redux';
+import './CartItem.scss';
+import  { useNavigate } from "react-router-dom";
+import { FaTimes} from 'react-icons/fa';
 
 
-function CartItem({id, thumbnail , title, price, quantity=0}) {
+
+function CartItem({id, thumbnail , title, price, category, quantity=0}) {
   const dispatch = useDispatch()
+  let navigate = useNavigate();
+
 
   return (
     <div className="favoriteItem">
           <img className="favoriteItem__image" src={thumbnail} alt='item'/>
          
             <p className="favoriteItem__title">{title}</p>
+             <p className="favoriteItem__category">{category}</p>
+             
+               <button className='favorite_recipe_button' onClick={() => {navigate(`/${id}`)}}>
+                      RECIPE
+                </button> 
             
             <button
               className='favoriteItem__removeButton' 
               onClick={() => dispatch(removeItem(id))}>
-                Remove
+                <FaTimes />
             </button>
 
     </div>
