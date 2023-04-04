@@ -1,24 +1,23 @@
-import { incrementQuantity, decrementQuantity, removeItem} from './redux/cartSlice'
+import {  removeItem} from '../redux/cartSlice'
 import { useDispatch } from 'react-redux'
+import './CartItem.scss'
+
 
 function CartItem({id, thumbnail , title, price, quantity=0}) {
   const dispatch = useDispatch()
 
   return (
-    <div className="cartItem">
-      <img className="cartItem__image" src={thumbnail} alt='item'/>
-      <div className="cartItem__info">
-        <p className="cartItem__title">{title}</p>
-        <p className="cartItem__price">
-          <small>$</small>
-          <strong>{price}</strong>
-        </p>
-        <button
-          className='cartItem__removeButton' 
-          onClick={() => dispatch(removeItem(id))}>
-            Remove
-        </button>
-      </div>
+    <div className="favoriteItem">
+          <img className="favoriteItem__image" src={thumbnail} alt='item'/>
+         
+            <p className="favoriteItem__title">{title}</p>
+            
+            <button
+              className='favoriteItem__removeButton' 
+              onClick={() => dispatch(removeItem(id))}>
+                Remove
+            </button>
+
     </div>
   )
 }

@@ -1,4 +1,6 @@
-import Homepage from "./components/Homepage";
+import Homepage from "./homepage/Homepage";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import RecipeInfo from "./components/RecipeInfo";
 import "./App.css";
 import {BrowserRouter as HashRouter, Routes, Route} from "react-router-dom";
@@ -10,6 +12,7 @@ function App() {
   return (
     <div className="App">
     <HashRouter>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/category" element={<Category />} />
@@ -17,6 +20,7 @@ function App() {
         <Route path="/beefpage" element={<FilterByCategory />} />
         <Route path="/:MealId" element={<RecipeInfo />} />
       </Routes>
+      <Footer />
     </HashRouter> 
     </div>
   );

@@ -1,0 +1,275 @@
+$color-bg :   rgba(39,174,97,255); 
+$color-black : #000;
+$color-white : #fff;
+
+
+
+.recipe-container {
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 30px auto;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+
+.recipes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  background-color: $color-white;
+  padding-bottom: 30px;
+  border-radius: 30px;
+  overflow: hidden;
+  
+}
+
+
+.card-image {
+  width: 100%;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+
+.category {
+  color: $color-bg;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+.card-body {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 992px) {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+//extra large
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+}
+
+
+
+.card_text_cont {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 992px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+//extra large
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+
+
+.card_button_cont {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 992px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+//extra large
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+
+
+.recipe_button {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+border: 1px solid $color-bg;
+color: #000;
+background: #fff;
+border-radius: 10px;
+padding:  5px;
+width: 100px;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+border: 1px solid $color-bg;
+color: #000;
+background: #fff;
+border-radius: 10px;
+padding:  5px;
+width: 100px;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 992px) {
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+border: 1px solid $color-bg;
+color: #000;
+background: #fff;
+border-radius: 10px;
+padding:  5px;
+width: 100px;
+}
+//extra large
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+border: none;
+color: #fff;
+background: #000;
+border-radius: 10px;
+padding:  5px;
+width: 100px;
+margin-bottom: 20px;
+}
+
+
+
+.favorite_button {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+border: 1px solid $color-bg;
+color: #000;
+background: #fff;
+border-radius: 10px;
+padding:  5px;
+width: 100px;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+border: 1px solid $color-bg;
+color: #000;
+background: #fff;
+border-radius: 10px;
+padding:  5px;
+width: 100px;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 992px) {
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+border: 1px solid $color-bg;
+color: #000;
+background: #fff;
+border-radius: 10px;
+padding:  5px;
+width: 100px;
+}
+//extra large
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+font-size: 25px;
+border: none;
+color: $color-bg;
+background: #fff;
+border-radius: 50%;
+padding: 0px 5px;
+margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
