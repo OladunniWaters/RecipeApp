@@ -24,17 +24,30 @@ export default function Recipe({recipe}) {
              />
              
              <div className="card-body">
-                <p className="category">{strCategory}</p>
-                <h3 className="name">{strMeal}</h3>
-               <button onClick={() => {navigate(`/${idMeal}`)}}>RECIPE</button>              
-                <button 
-                  onClick={() => 
-                    dispatch(addToCart({
-                      idMeal, strMeal, strCategory, strMealThumb
-                    }))
-                  }>
-                  <BsFillHeartFill />
-                </button>
+                <div className='card_text_cont'>
+                    <p className="category">{strCategory}</p>
+                    <h3 className="name">{strMeal}</h3>
+                </div>
+                
+                
+                <div className='card_button_cont'>
+                
+                    <button 
+                     className='favorite_button'
+                      onClick={() => 
+                        dispatch(addToCart({
+                          idMeal, strMeal, strCategory, strMealThumb
+                        }))
+                      }>
+                      <BsFillHeartFill />
+                    </button>
+                
+                   <button className='recipe_button' onClick={() => {navigate(`/${idMeal}`)}}>
+                      RECIPE
+                   </button>      
+                   
+                </div>
+                
              </div>   
            </div>
 

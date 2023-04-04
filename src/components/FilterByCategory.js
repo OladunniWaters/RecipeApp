@@ -1,7 +1,8 @@
 import React from "react";
+import './BeefCategory.scss'
 import { useState, useEffect} from "react";
 import Recipe from "./Recipe";
-import Navbar from "./Navbar"
+
 
 
 
@@ -32,11 +33,8 @@ export default function Category() {
   
   return (
       <> 
-      
-        <Navbar />
-         
- 
-              <h1>Filter by category</h1>
+
+              <h1 className='category_header'>BEEF CATEGORY</h1>
               <div className="recipe-container">
                   <div className="recipes">
                    {category.map(recipe => (

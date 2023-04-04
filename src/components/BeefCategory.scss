@@ -1,4 +1,4 @@
-.favoriteItem {
+.category_header {
   //small
 @media screen and (min-width: 320px) and (max-width: 576px) {
 display: flex;
@@ -21,49 +21,10 @@ justify-content: center;
 align-items: center;
 }
 //extra large
-display: flex;
-justify-content: space-between;
-align-items: center;
+text-align: center;
+font-size: 50px;
+font-family: 'Dosis', sans-serif;
+font-weight: bold;
+margin-top: 50px;
+margin-bottom: -40px;
 }
-
-
-.favoriteItem__image {
-  //small
-@media screen and (min-width: 320px) and (max-width: 576px) {
-width: 200px;
-}
-// medium
-@media screen and (min-width: 577px) and (max-width: 768px) {
-width: 200px;
-}
-//large
-@media screen and (min-width: 769px) and (max-width: 992px) {
-width: 200px;
-}
-//extra large
-width: 200px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

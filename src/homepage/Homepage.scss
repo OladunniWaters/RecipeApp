@@ -79,7 +79,6 @@ color: $color-white;
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
   gap: 2rem;
-  align-items: flex-right;
 }
 
 @media (min-width: 600px) {
@@ -140,7 +139,6 @@ align-items: center;
 padding-top: 50px;
 padding-bottom: 50px;
 background: $color-bg;
-border-bottom: 50px solid #000;
 }
 
 
@@ -177,7 +175,7 @@ font-size: 20px;
 font-weight: bold;
 color: $color-black;
 background: $color-white;
-border: 2px solid #000;
+border: none;
 border-radius: 30px;
 padding: 10px 20px;
 display: flex;
@@ -211,6 +209,8 @@ width: 100px;
   display: grid;
   grid-template-columns: repeat(1, 1fr); 
   gap: 2rem;
+  background: $color-white;
+  
 }
 
 @media (min-width: 600px) {
@@ -218,7 +218,11 @@ width: 100px;
 }
 
 @media (min-width: 900px) {
-  .recipes { grid-template-columns: repeat(3, 1fr); }
+  .recipes {
+    grid-template-columns: repeat(4, 1fr); 
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 
