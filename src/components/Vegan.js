@@ -7,9 +7,9 @@ import Recipe from "./Recipe";
 
 
 
-const apiUrl = "https://www.themealdb.com/api/json/v1/1/filter.php?c=Beef"
+const apiUrl = "https://www.themealdb.com/api/json/v1/1/filter.php?c=Vegan"
 
-export default function Category() {
+export default function Vegan() {
   
  //RECIPE FUNCTION
 
@@ -34,7 +34,7 @@ export default function Category() {
   return (
       <> 
 
-              <h1 className='category_header'>BEEF CATEGORY</h1>
+              <h1 className='category_header'>VEGAN CATEGORY</h1>
               <div className="recipe-container">
                   <div className="recipes">
                    {category.map(recipe => (

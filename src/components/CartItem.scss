@@ -1,3 +1,7 @@
+$color-bg :   rgba(39,174,97,255); //#01a149
+$color-black : #000;
+$color-white : #fff;
+
 .favoriteItem {
   //small
 @media screen and (min-width: 320px) and (max-width: 576px) {
@@ -24,6 +28,11 @@ align-items: center;
 display: flex;
 justify-content: space-between;
 align-items: center;
+margin-bottom: 20px;
+padding:  20px;
+border-radius: 20px;
+width: 1000px;
+border: 4px solid $color-bg;
 }
 
 
@@ -45,10 +54,163 @@ width: 200px;
 }
 
 
+.favoriteItem__title{
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+text-align: left;
+font-size: 60px;
+font-family: 'Dosis', sans-serif;
+font-weight: bold;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+text-align: left;
+font-size: 60px;
+font-family: 'Dosis', sans-serif;
+font-weight: bold;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 992px) {
+text-align: left;
+font-size: 60px;
+font-family: 'Dosis', sans-serif;
+font-weight: bold;
+}
+//extra large
+text-align: left;
+font-size: 30px;
+font-family: 'Dosis', sans-serif;
+font-weight: bold;
+}
 
 
 
+.favoriteItem__category {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+text-align: left;
+font-size: 60px;
+font-family: 'Dosis', sans-serif;
+font-weight: bold;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+text-align: left;
+font-size: 60px;
+font-family: 'Dosis', sans-serif;
+font-weight: bold;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 992px) {
+text-align: left;
+font-size: 60px;
+font-family: 'Dosis', sans-serif;
+font-weight: bold;
+}
+//extra large
+text-align: left;
+font-size: 30px;
+font-family: 'Dosis', sans-serif;
+font-weight: bold;
+}
 
+
+
+.favorite_recipe_button {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+text-align: center;
+font-size: 18px;
+font-family: 'Dosis', sans-serif;
+border: 2px solid $color-bg;
+padding: 10px 20px;
+border-radius: 10px;
+font-weight: bold;
+color: $color-white;
+background: $color-black;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+text-align: center;
+font-size: 18px;
+font-family: 'Dosis', sans-serif;
+border: 2px solid $color-bg;
+padding: 10px 20px;
+border-radius: 10px;
+font-weight: bold;
+color: $color-white;
+background: $color-black;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 992px) {
+text-align: center;
+font-size: 18px;
+font-family: 'Dosis', sans-serif;
+border: 2px solid $color-bg;
+padding: 10px 20px;
+border-radius: 10px;
+font-weight: bold;
+color: $color-white;
+background: $color-black;
+}
+//extra large
+text-align: center;
+font-size: 18px;
+font-family: 'Dosis', sans-serif;
+border: none;
+padding: 10px 20px;
+border-radius: 10px;
+font-weight: bold;
+color: $color-white;
+background: $color-black;
+}
+
+
+.favoriteItem__removeButton {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+text-align: center;
+font-size: 18px;
+font-family: 'Dosis', sans-serif;
+border: 2px solid $color-bg;
+padding: 10px 20px;
+border-radius: 10px;
+font-weight: bold;
+color: $color-white;
+background: $color-black;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+text-align: center;
+font-size: 18px;
+font-family: 'Dosis', sans-serif;
+border: 2px solid $color-bg;
+padding: 10px 20px;
+border-radius: 10px;
+font-weight: bold;
+color: $color-white;
+background: $color-black;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 992px) {
+text-align: center;
+font-size: 18px;
+font-family: 'Dosis', sans-serif;
+border: 2px solid $color-bg;
+padding: 10px 20px;
+border-radius: 10px;
+font-weight: bold;
+color: $color-white;
+background: $color-black;
+}
+//extra large
+text-align: center;
+font-size: 40px;
+font-family: 'Dosis', sans-serif;
+border: none;
+font-weight: bold;
+background: #fff;
+}
 
 
 

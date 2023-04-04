@@ -1,0 +1,126 @@
+
+form {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+//extra large
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+
+
+input:focus {
+  outline: none;
+}
+
+
+input {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  border: 2px solid #65C18C;
+  padding: 10px;
+  font-size: 16px;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  border: 2px solid #65C18C;
+  padding: 10px;
+  font-size: 16px;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  border: 2px solid #65C18C;
+  padding: 10px;
+  font-size: 16px;
+}
+//extra large
+  border: 2px solid #65C18C;
+  padding: 10px;
+  font-size: 16px;
+}
+
+
+.submit_btn{
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+ border-radius: 10px;
+ background-color: rgba(39,174,97,255);
+ color: #fff;
+ margin-left: 10px;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+ border-radius: 10px;
+ background-color: rgba(39,174,97,255);
+ color: #fff;
+ margin-left: 10px;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 992px) {
+ border-radius: 10px;
+ background-color: rgba(39,174,97,255);
+ color: #fff;
+ margin-left: 10px;
+}
+//extra large
+ border-radius: 10px;
+ background-color: rgba(39,174,97,255);
+ color: #fff;
+ margin-left: 10px;
+}
+
+
+
+.search-bar {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  border-radius: 10px;
+  width: 400px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  border-radius: 10px;
+  width: 400px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  border-radius: 10px;
+  width: 400px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+//extra large
+  border-radius: 10px;
+  width: 400px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

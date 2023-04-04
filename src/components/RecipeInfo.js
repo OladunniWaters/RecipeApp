@@ -2,7 +2,7 @@ import React from "react";
 import './RecipeInfo.scss'
 import { useState } from "react";
 import { useParams  } from "react-router-dom";
-
+import { TfiYoutube } from 'react-icons/tfi';
 
 
 export default function Details() {
@@ -38,19 +38,27 @@ export default function Details() {
                                     <div className='info_tags_cont'>
                                        <p className="info_category">{item.strCategory}</p>
                                        <p className="info_area">{item.strArea}</p>
-                                       <a href={item.strYoutube} target='_blank' rel="noreferrer">Youtube</a>
+                                       <a className="info_youtube" href={item.strYoutube} target='_blank' rel="noreferrer"><TfiYoutube /></a>
                                     </div>
-                                    <h3>INGREDIENTS</h3>    
-                                    <ul>
-                                         <li className="">.{item.strMeasure1} of {item.strIngredient1}</li>
-                                          <li className="">.{item.strMeasure2} of {item.strIngredient2}</li>
+                                    <p className='info_ingredient_title'>INGREDIENTS</p>    
+                                    <ul className='info_ingredient_ul'>
+                                         <li className='info_ingredient_li'>{item.strMeasure1} of {item.strIngredient1}</li>
+                                          <li className='info_ingredient_li'>{item.strMeasure2} of {item.strIngredient2}</li>
+                                          <li className='info_ingredient_li'>{item.strMeasure1} of {item.strIngredient3}</li>
+                                          <li className='info_ingredient_li'>{item.strMeasure2} of {item.strIngredient4}</li>
+                                          <li className='info_ingredient_li'>{item.strMeasure1} of {item.strIngredient5}</li>
+                                          <li className='info_ingredient_li'>{item.strMeasure2} of {item.strIngredient6}</li>
+                                          <li className='info_ingredient_li'>{item.strMeasure1} of {item.strIngredient7}</li>
+                                          <li className='info_ingredient_li'>{item.strMeasure2} of {item.strIngredient8}</li>
+                                          <li className='info_ingredient_li'>{item.strMeasure1} of {item.strIngredient9}</li>
+                                          <li className='info_ingredient_li'>{item.strMeasure2} of {item.strIngredient10}</li>
                                     </ul>
                               </div>   
                           </div>
                              
                                
                             <div className='info_instructions_cont'>   
-                                <h3>INSTRUCTIONS</h3>  
+                                <h3 className='info_instructions_title'>INSTRUCTIONS</h3>  
                                 <p className="info_instructions">{item.strInstructions}</p>
                              </div> 
             

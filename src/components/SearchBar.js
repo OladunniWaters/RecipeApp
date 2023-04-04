@@ -1,4 +1,7 @@
 import React from "react";
+import './SearchBar.scss'
+
+
 
 export default function SearchBar({ handleSubmit, value, onChange }) {
   
@@ -15,7 +18,7 @@ export default function SearchBar({ handleSubmit, value, onChange }) {
             <input 
                type="submit"
                value="Search"
-               className="btn"
+               className="submit_btn"
             />
         </form>
       </>
