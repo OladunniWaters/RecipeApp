@@ -51,7 +51,7 @@ export default function Homepage() {
       <> 
     
     <div className='hero'>
-         <div>
+         <div className='container hero_text-cont'>
             <h1 className='hero__text__h1'>Get delicious recipes for any occasion</h1>
             <SearchBar
                 value={query}

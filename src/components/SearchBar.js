@@ -11,7 +11,7 @@ export default function SearchBar({ handleSubmit, value, onChange }) {
             <input
                value={value}
                onChange={onChange}
-               placeholder="Search Delicious Recipes"
+               placeholder="Chicken"
                className="search-bar"
             />
             

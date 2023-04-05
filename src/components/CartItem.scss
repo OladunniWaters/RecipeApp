@@ -6,23 +6,35 @@ $color-white : #fff;
   //small
 @media screen and (min-width: 320px) and (max-width: 576px) {
 display: flex;
-flex-direction: column;
-justify-content: center;
+justify-content: space-between;
 align-items: center;
+margin-bottom: 20px;
+padding:  20px;
+border-radius: 20px;
+width: 350px;
+border: 4px solid $color-bg;
 }
 // medium
 @media screen and (min-width: 577px) and (max-width: 768px) {
 display: flex;
-flex-direction: column;
-justify-content: center;
+justify-content: space-between;
 align-items: center;
+margin-bottom: 20px;
+padding:  20px;
+border-radius: 20px;
+width: 700px;
+border: 4px solid $color-bg;
 }
 //large
 @media screen and (min-width: 769px) and (max-width: 992px) {
 display: flex;
-flex-direction: column;
-justify-content: center;
+justify-content: space-between;
 align-items: center;
+margin-bottom: 20px;
+padding:  20px;
+border-radius: 20px;
+width: 700px;
+border: 4px solid $color-bg;
 }
 //extra large
 display: flex;
@@ -39,7 +51,7 @@ border: 4px solid $color-bg;
 .favoriteItem__image {
   //small
 @media screen and (min-width: 320px) and (max-width: 576px) {
-width: 200px;
+width: 100px;
 }
 // medium
 @media screen and (min-width: 577px) and (max-width: 768px) {
@@ -58,21 +70,21 @@ width: 200px;
   //small
 @media screen and (min-width: 320px) and (max-width: 576px) {
 text-align: left;
-font-size: 60px;
+font-size: 15px;
 font-family: 'Dosis', sans-serif;
 font-weight: bold;
 }
 // medium
 @media screen and (min-width: 577px) and (max-width: 768px) {
 text-align: left;
-font-size: 60px;
+font-size: 30px;
 font-family: 'Dosis', sans-serif;
 font-weight: bold;
 }
 //large
 @media screen and (min-width: 769px) and (max-width: 992px) {
 text-align: left;
-font-size: 60px;
+font-size: 30px;
 font-family: 'Dosis', sans-serif;
 font-weight: bold;
 }
@@ -89,21 +101,21 @@ font-weight: bold;
   //small
 @media screen and (min-width: 320px) and (max-width: 576px) {
 text-align: left;
-font-size: 60px;
+font-size: 15px;
 font-family: 'Dosis', sans-serif;
 font-weight: bold;
 }
 // medium
 @media screen and (min-width: 577px) and (max-width: 768px) {
 text-align: left;
-font-size: 60px;
+font-size: 30px;
 font-family: 'Dosis', sans-serif;
 font-weight: bold;
 }
 //large
 @media screen and (min-width: 769px) and (max-width: 992px) {
 text-align: left;
-font-size: 60px;
+font-size: 30px;
 font-family: 'Dosis', sans-serif;
 font-weight: bold;
 }
@@ -120,38 +132,41 @@ font-weight: bold;
   //small
 @media screen and (min-width: 320px) and (max-width: 576px) {
 text-align: center;
-font-size: 18px;
+font-size: 10px;
 font-family: 'Dosis', sans-serif;
-border: 2px solid $color-bg;
-padding: 10px 20px;
+border: none;
+padding: 5px 10px;
 border-radius: 10px;
 font-weight: bold;
 color: $color-white;
 background: $color-black;
+margin-top: -15px;
 }
 // medium
 @media screen and (min-width: 577px) and (max-width: 768px) {
 text-align: center;
 font-size: 18px;
 font-family: 'Dosis', sans-serif;
-border: 2px solid $color-bg;
+border: none;
 padding: 10px 20px;
 border-radius: 10px;
 font-weight: bold;
 color: $color-white;
 background: $color-black;
+margin-top: -15px;
 }
 //large
 @media screen and (min-width: 769px) and (max-width: 992px) {
 text-align: center;
 font-size: 18px;
 font-family: 'Dosis', sans-serif;
-border: 2px solid $color-bg;
+border: none;
 padding: 10px 20px;
 border-radius: 10px;
 font-weight: bold;
 color: $color-white;
 background: $color-black;
+margin-top: -15px;
 }
 //extra large
 text-align: center;
@@ -163,6 +178,7 @@ border-radius: 10px;
 font-weight: bold;
 color: $color-white;
 background: $color-black;
+margin-top: 0px;
 }
 
 
@@ -170,38 +186,32 @@ background: $color-black;
   //small
 @media screen and (min-width: 320px) and (max-width: 576px) {
 text-align: center;
-font-size: 18px;
+font-size: 20px;
 font-family: 'Dosis', sans-serif;
-border: 2px solid $color-bg;
-padding: 10px 20px;
-border-radius: 10px;
+border: none;
 font-weight: bold;
-color: $color-white;
-background: $color-black;
+background: #fff;
+margin-top: -20px;
 }
 // medium
 @media screen and (min-width: 577px) and (max-width: 768px) {
 text-align: center;
-font-size: 18px;
+font-size: 30px;
 font-family: 'Dosis', sans-serif;
-border: 2px solid $color-bg;
-padding: 10px 20px;
-border-radius: 10px;
+border: none;
 font-weight: bold;
-color: $color-white;
-background: $color-black;
+background: #fff;
+margin-top: -20px;
 }
 //large
 @media screen and (min-width: 769px) and (max-width: 992px) {
 text-align: center;
-font-size: 18px;
+font-size: 30px;
 font-family: 'Dosis', sans-serif;
-border: 2px solid $color-bg;
-padding: 10px 20px;
-border-radius: 10px;
+border: none;
 font-weight: bold;
-color: $color-white;
-background: $color-black;
+background: #fff;
+margin-top: -20px;
 }
 //extra large
 text-align: center;
@@ -210,6 +220,7 @@ font-family: 'Dosis', sans-serif;
 border: none;
 font-weight: bold;
 background: #fff;
+margin-top: 0px;
 }
 
 

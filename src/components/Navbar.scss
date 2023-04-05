@@ -2,10 +2,19 @@
   background: #000;
 }
 
+.navbar-toggler-icon {
+  font-size: 20px;
+  border: none;
+  color: #fff;
+  background: #000;
+}
+
+
 .icons {
   color: #fff;
   font-weight: bold;
   font-size: 30px;
+  transition: color 0.5s ease;
 }
 
 .heart_icon {
@@ -13,8 +22,12 @@
   font-weight: bold;
   font-size: 30px;
   margin-left: 20px;
+  transition: color 0.5s ease;
 }
 
+.heart_icon:hover, .icons:hover {
+   color: rgba(76,176,81,255);
+}
 
 .favoriteIcon_cont {
   display: flex;
@@ -31,33 +44,39 @@
  font-size: 20px;
  font-weight: bold;
  font-family: 'Dosis', sans-serif;
+  transition: all 0.5s ease;
+ cursor: pointer;
 }
 // medium
 @media screen and (min-width: 577px) and (max-width: 768px) {
  color: #fff;
- font-size: 20px;
+ font-size: 30px;
  font-weight: bold;
  font-family: 'Dosis', sans-serif;
+  transition: all 0.5s ease;
+ cursor: pointer;
 }
 //large
 @media screen and (min-width: 769px) and (max-width: 992px) {
  color: #fff;
- font-size: 20px;
+ font-size: 30px;
  font-weight: bold;
  font-family: 'Dosis', sans-serif;
+  transition: all 0.5s ease;
+ cursor: pointer;
 }
 //extra large
  color: #fff;
- font-size: 25px;
+ font-size: 40px;
  font-weight: bold;
  font-family: 'Dosis', sans-serif;
+ transition: all 0.5s ease;
+ cursor: pointer;
+ 
 }
 
 .navbar-brand:hover {
  color: rgba(76,176,81,255);
- font-size: 20px;
- font-weight: bold;
- font-family: 'Dosis', sans-serif;
 }
 
 

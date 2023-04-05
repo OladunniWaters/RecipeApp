@@ -23,7 +23,7 @@ align-items: center;
 //large
 @media screen and (min-width: 769px) and (max-width: 992px) {
 display: flex;
-flex-direction: column;
+flex-direction: column-reverse;
 justify-content: center;
 align-items: center;
 }
@@ -38,38 +38,72 @@ background: $color-black;
 }
 
 
+.hero_text-cont {
+  //small
+@media screen and (min-width: 320px) and (max-width: 576px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+// medium
+@media screen and (min-width: 577px) and (max-width: 768px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+//large
+@media screen and (min-width: 769px) and (max-width: 992px) {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+//extra large
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+
+
 
 .hero__text__h1{
   //small
 @media screen and (min-width: 320px) and (max-width: 576px) {
 font-family: 'Dosis', sans-serif;
-font-size: 100px;
-//color: $color-white;
+font-size: 50px;
+color: $color-white;
 font-weight: bold;
-
+width: 300px;
+text-align: left;
 }
 // medium
 @media screen and (min-width: 577px) and (max-width: 768px) {
 font-family: 'Dosis', sans-serif;
-font-size: 100px;
-//color: $color-white;
+font-size: 80px;
+color: $color-white;
 font-weight: bold;
-
+width: 500px;
+text-align: left;
 }
 //large
 @media screen and (min-width: 769px) and (max-width: 992px) {
 font-family: 'Dosis', sans-serif;
-font-size: 100px;
-//color: $color-white;
+font-size: 80px;
+color: $color-white;
 font-weight: bold;
-
+width: 700px;
+text-align: center;
 }
 //extra large
-font-family: 'Bitter', serif;
-font-size: 70px;
+font-family: 'Dosis', sans-serif;
+font-size: 80px;
+color: $color-white;
 font-weight: bold;
 width: 500px;
-color: $color-white;
 text-align: left;
 }
 
@@ -77,20 +111,38 @@ text-align: left;
 
 
 .food__image__cont {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  gap: 2rem;
-  margin-top: -60px;
+  display: none;
 }
 
 @media (min-width: 600px) {
-  .food__image__cont { grid-template-columns: repeat(2, 1fr); }
+  .food__image__cont { 
+      display: none;
+      gap: 2rem;
+      margin-top: -60px;
+      grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 900px) {
-  .food__image__cont{ grid-template-columns: repeat(2, 1fr); }
+  .food__image__cont{
+      display: grid;
+      gap: 2rem;
+      margin-top: -60px;
+      margin-right: 10px;
+      grid-template-columns: repeat(2, 1fr);
+    }
 }
 
+
+@media (min-width: 1025px) {
+  .food__image__cont{
+      display: grid;
+      gap: 2rem;
+      margin-top: -60px;
+      margin-right: 150px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 
 .food__image {
@@ -116,22 +168,31 @@ width: 200px;
 @media screen and (min-width: 320px) and (max-width: 576px) {
 display: flex;
 flex-direction: row;
-justify-content: center;
+justify-content: space-evenly;
 align-items: center;
+padding-top: 10px;
+padding-bottom: 10px;
+background: $color-bg;
 }
 // medium
 @media screen and (min-width: 577px) and (max-width: 768px) {
 display: flex;
 flex-direction: row;
-justify-content: center;
-align-items: center;;
+justify-content: space-evenly;
+align-items: center;
+padding-top: 50px;
+padding-bottom: 50px;
+background: $color-bg;
 }
 //large
 @media screen and (min-width: 769px) and (max-width: 992px) {
 display: flex;
 flex-direction: row;
-justify-content: center;
+justify-content: space-evenly;
 align-items: center;
+padding-top: 50px;
+padding-bottom: 50px;
+background: $color-bg;
 }
 //extra large
 display: flex;
@@ -150,25 +211,49 @@ background: $color-bg;
   //small
 @media screen and (min-width: 320px) and (max-width: 576px) {
 font-family: 'Dosis', sans-serif;
-font-size: 100px;
-//color: $color-white;
+font-size: 10px;
 font-weight: bold;
+color: $color-black;
+background: $color-white;
+border: none;
+border-radius: 15px;
+padding: 5px 10px;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
 
 }
 // medium
 @media screen and (min-width: 577px) and (max-width: 768px) {
 font-family: 'Dosis', sans-serif;
-font-size: 100px;
-//color: $color-white;
+font-size: 20px;
 font-weight: bold;
+color: $color-black;
+background: $color-white;
+border: none;
+border-radius: 15px;
+padding: 5px 10px;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
 
 }
 //large
 @media screen and (min-width: 769px) and (max-width: 992px) {
 font-family: 'Dosis', sans-serif;
-font-size: 100px;
-//color: $color-white;
+font-size: 20px;
 font-weight: bold;
+color: $color-black;
+background: $color-white;
+border: none;
+border-radius: 15px;
+padding: 5px 10px;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
 
 }
 //extra large
@@ -199,7 +284,7 @@ width: 100px;
 }
 //large
 @media screen and (min-width: 769px) and (max-width: 992px) {
-width: 200px;
+width: 100px;
 }
 //extra large
 width: 100px;

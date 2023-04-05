@@ -5,24 +5,26 @@ form {
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 0px;
 }
 // medium
 @media screen and (min-width: 577px) and (max-width: 768px) {
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  margin-left: -10px;
 }
 //large
 @media screen and (min-width: 769px) and (max-width: 992px) {
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  margin-left: -10px;
 }
 //extra large
   display: flex;
