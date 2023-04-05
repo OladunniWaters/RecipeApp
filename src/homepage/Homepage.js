@@ -72,7 +72,7 @@ export default function Homepage() {
         
          
          <div className='category__button__cont'>
-           <button className='category__button' onClick={() => {navigate(`/beefpage`)}}>
+           <button className='category__button' onClick={() => {navigate(`/beef`)}}>
              Beef
              <img src='https:\/\/www.themealdb.com\/images\/category\/beef.png' className='category_button_image' alt='food'/>
            </button>
