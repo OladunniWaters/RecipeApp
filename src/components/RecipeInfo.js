@@ -17,8 +17,6 @@ export default function Details() {
     })
   }
   
-
-//`"https:\/\/www.youtube.com\/watch?v=4aZr5hZXP_s" `
     
   return (
     <>
