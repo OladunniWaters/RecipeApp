@@ -6,7 +6,6 @@ import {addToCart} from '../redux/cartSlice';
 import { BsFillHeartFill } from 'react-icons/bs';
 
 
-
 export default function Recipe({recipe}) {
   const {idMeal, strMeal, strCategory, strMealThumb } = recipe
     let navigate = useNavigate();

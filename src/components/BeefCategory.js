@@ -1,4 +1,7 @@
-import React from "react";
+import React, { Suspense } from "react";
+import styled from "styled-components";
+import Loading from "./Loading";
+
 import './BeefCategory.scss'
 import { useState, useEffect} from "react";
 import Recipe from "./Recipe";
@@ -35,6 +38,8 @@ export default function BeefCategory() {
       <> 
 
               <h1 className='category_header'>BEEF CATEGORY</h1>
+              
+          <Suspense maxDuration={300} fallback={<Loading />}>    
               <div className="recipe-container">
                   <div className="recipes">
                    {category.map(recipe => (
@@ -46,7 +51,7 @@ export default function BeefCategory() {
                    ))}
                    </div>
              </div>
-          
+          </Suspense>
           
          
          
