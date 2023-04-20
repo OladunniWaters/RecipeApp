@@ -3,7 +3,7 @@ import './RecipeInfo.scss'
 import { useState } from "react";
 import { useParams  } from "react-router-dom";
 import { BsPlayBtnFill } from 'react-icons/bs';
-import LoadingSpinner from "./LoadingSpinner";
+
 
 export default function Details() {
   const [ item , setItem ] = useState()
@@ -13,7 +13,7 @@ export default function Details() {
     fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${MealId}`)
     .then(response => response.json())
     .then(data => {
-     setTimeout(() => setItem(data.meals[0]), 3000)  
+      setItem(data.meals[0])
     })
   }
   
@@ -22,7 +22,10 @@ export default function Details() {
   return (
     <>
 
-         { (!item) ?  <LoadingSpinner />
+         { (!item) ?   <div class="cell">
+                              <div class="pl pl-bow"></div>
+                              <div class="pl-name">Bow</div>
+                            </div>
               : (
                         <div className='container info_cont' key={item.idMeal}> 
                         
