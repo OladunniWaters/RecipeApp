@@ -2,10 +2,6 @@ import './BeefCategory.scss'
 import { useState, useEffect} from "react";
 import Recipe from "./Recipe";
 
-
-
-
-
 const apiUrl = "https://www.themealdb.com/api/json/v1/1/filter.php?c=Beef"
 
 export default function BeefCategory() {
@@ -19,7 +15,7 @@ export default function BeefCategory() {
     const url = apiUrl
     const response = await fetch(url)
     const data = await response.json();
-    setCategory(data.meals);
+    setCategory(data.meals)
   }
   
   useEffect(() => {
