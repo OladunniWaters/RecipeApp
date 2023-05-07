@@ -31,7 +31,7 @@ export default function Navbar() {
           <a className="nav-link" aria-current="page" href="https://github.com/OladunniWaters" target="_blank" rel="noreferrer"><BsGithub className="icons"/></a>
         </li>
         
-          <div className='favoriteIcon_cont' onClick={() => navigate('/cart')}>
+          <div className='favoriteIcon_cont' onClick={() => navigate('/favorite')}>
               <BsFillBagHeartFill className='heart_icon' />
           </div>
 
