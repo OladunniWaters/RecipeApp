@@ -9,8 +9,8 @@ import Chicken from './components/Chicken';
 import Dessert from './components/Dessert';
 import Seafood from './components/Seafood';
 import Vegan from './components/Vegan';
-import Cart from "./components/Cart";
-
+//import Cart from "./components/Cart";
+import Favorite from "./components/Favorite";
 
 
 
@@ -21,7 +21,7 @@ function App() {
       <Navbar />
       <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/cart" element={<Cart/>} />
+          <Route path="/favorite" element={<Favorite/>} />
           <Route path="/beef" element={<BeefCategory />} />
           <Route path="/chicken" element={<Chicken />} />
           <Route path="/seafood" element={<Seafood />} />
