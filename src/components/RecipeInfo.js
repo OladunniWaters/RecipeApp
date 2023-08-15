@@ -60,7 +60,7 @@ export default function Details() {
                           
                                
                             <div className='info_instructions_cont'>
-                                <AdsComponent dataAdSlot='5210798455'/>
+                                <AdsComponent />
                                 <h3 className='info_instructions_title'>INSTRUCTIONS</h3>  
                                 <p className="info_instructions">{item.strInstructions}</p>
                              </div> 
