@@ -4,6 +4,8 @@ import { useState } from "react";
 import { useParams  } from "react-router-dom";
 import { BsPlayBtnFill } from 'react-icons/bs';
 import LoadingSpinner from "./LoadingSpinner";
+import AdsComponent from './ad/AdsComponent';
+
 
 export default function Details() {
   const [ item , setItem ] = useState()
@@ -55,8 +57,10 @@ export default function Details() {
                               </div>   
                           </div>
                              
+                          
                                
-                            <div className='info_instructions_cont'>   
+                            <div className='info_instructions_cont'>
+                                <AdsComponent dataAdSlot='3864614118'/>
                                 <h3 className='info_instructions_title'>INSTRUCTIONS</h3>  
                                 <p className="info_instructions">{item.strInstructions}</p>
                              </div> 
